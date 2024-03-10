@@ -1,0 +1,27 @@
+function solve(n)
+{
+	let i = n
+	while(i>0)
+	{
+		if(i%2 == 0)
+		{
+			for(let j = 1; j <= n*n; j+=2)
+			{
+				statements
+			}
+		}
+		i /=2
+	}
+}
+
+solution:-
+
+The outer while loop decrements "i" by half in each iteration, which runs in O(log n) time complexity.
+Within the loop, there is an if statement checking if "i" is even 
+(i % 2 == 0). 
+
+If this condition is met, the inner for loop runs "n * n" times, incrementing by 2 each time, which gives for loop a time complexity of O(n^2).
+The inner for loop's time complexity is considered within the context of the outer loop, where it executes based on the value of "i".
+
+Therefore, the overall time complexity of this function is O(n^2 * log n), 
+as it considers the nested for loop that runs n * n times within each iteration of the outer loop that runs in log n steps.

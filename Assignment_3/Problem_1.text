@@ -1,0 +1,26 @@
+ 
+ function solve(int n){
+    for(let i = 0; i < n; i++){
+        for(int j=0; j < i / 2; j++){
+            // O(1) operation
+        }
+    }
+}
+
+solution:-
+ 
+The time complexity of the given function can be calculated by the number of iterationb. Let's break it down:
+
+The outer loop runs from 0 to n, so it has a time complexity of O(n).
+
+The inner loop runs from 0 to i/2 for each iteration of the outer loop. In the worst case, the inner loop will run i/2 times for each iteration of the outer loop.
+
+To calculate the total time complexity, we sum up the total number of iterations that the inner loop will run:
+
+0 + 1 + 2 + 3 + ... + n/2
+
+This is the sum of the first n/2 natural numbers, which can be simplified to (n/2)(n/2 + 1)/2.
+
+So, the time complexity of the function is O(n^2), since the dominant term is n^2.
+
+Therefore, the time complexity of the given function is O(n^2), which signifies that its execution time grows quadratically with the size of the input.

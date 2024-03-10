@@ -1,0 +1,12 @@
+
+If an algorithm has a time complexity of O(1), then the complexity of it is ?
+
+a) constant
+b) polynomial
+c) exponential
+
+
+a) constant
+
+If an algorithm has a time complexity of O(1), it means that its running time remains constant regardless of the input size. 
+Therefore, the complexity of such an algorithm is considered constant.

@@ -1,0 +1,17 @@
+What is the time complexity of following code:
+ 
+let a = 0, let i = N; 
+while (i > 0) { 
+    a += i; 
+    i /= 2; 
+}
+
+solution:-
+
+The time complexity of the given code can be analyzed as follows:
+
+In the given code, the variable "i" is divided by 2 in each iteration until it reaches 0. 
+This indicates that the loop runs approximately log(N) times, where N is the initial value of "i".
+
+Therefore, the time complexity of the given code is O(log N),
+ as the number of iterations grows logarithmically with the size of the input N.

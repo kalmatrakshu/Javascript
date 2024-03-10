@@ -1,0 +1,27 @@
+function solve(n)
+{
+
+	let i = 1
+	while(i < n)
+	{
+		let x = i
+		while(x--)
+		{
+			o(1)
+		}
+		i++
+	}
+}
+
+solution:-
+
+The outer while loop iterates from 1 to n, which gives it a time complexity of O(n).
+
+Within the outer loop, the inner while loop runs x times where x is equal to the current value of i. 
+
+The total number of iterations of the inner loop across all outer loop iterations is 1 + 2 + 3 + ... + n-1, which simplifies to n(n-1)/2.
+
+The individual operation within the inner loop is assumed to be of constant time complexity, denoted as O(1).
+
+Hence, the overall time complexity of this function is O(n) + O(n(n-1)/2), which simplifies to O(n^2). 
+This means that the function execution time grows quadratically with the input size n.
